@@ -1,0 +1,240 @@
+.announcement--bar {
+    height: 42px;
+    background-color: #1a1a1a;
+    color: #626262;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.truck--container {
+    margin-left: 90px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.link {
+    font-size: 12px;
+    margin-left: 11.4px;
+}
+
+.right--container {
+    display: flex;
+    align-items: center;
+}
+
+.links--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.login {
+    margin-right: 35px;
+}
+
+.follow {
+    font-size: 10px;
+}
+
+.main--container {
+    height: 795px;
+    background-color: black;
+    color: #fff;
+}
+
+.heading--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading--container--left {
+    margin-left: 90px;
+    margin-right: 934px;
+}
+
+.heading--container--left h2 {
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: normal;
+}
+
+.heading--container--right {
+    display: flex;
+    margin-right: 90px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.heading--container--right h4 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.expandable--column {
+    display: none;
+    cursor: pointer;
+}
+
+.designer--break {
+    height: 1px;
+    background-color: #fff;
+    margin: -34px 90px;
+    display: flex;
+}
+
+.star--container {
+    position: relative;
+    top: -10.5px;
+    left: 476px;
+}
+
+.navbar--links--container,
+.navbar--expandable--conatiner {
+    margin: 57px 0px 0px 137px;
+    display: flex;
+    flex-direction: row;
+    gap: 106px;
+}
+
+.navbar--links {
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+}
+
+.active--navbar--links {
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.active--link {
+    text-decoration: underline;
+}
+
+.navbar--sublinks {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 3px;
+}
+
+.hero--image--section {
+    display: flex;
+}
+
+.hero--image--container {
+    margin-left: -855px;
+}
+
+.hero--image--heading--conatiner {
+    padding-left: 370px;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.image--heading {
+    font-size: 135px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+    transform: scaleX(1.7);
+}
+
+.hollow--design {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 204px;
+}
+
+@media only screen and (max-width: 600px) {
+    .truck--container {
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .links--container {
+        margin-right: 20px;
+    }
+    .link {
+        font-size: 10px;
+    }
+    .follow {
+        display: none;
+    }
+    .login {
+        margin-right: 1px;
+    }
+    .main--container {
+        height: auto;
+    }
+    .heading--container--left {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    .designer--break {
+        margin-left: 20px;
+        display: block;
+        margin-right: 20px;
+    }
+    .heading--container--right {
+        display: none;
+    }
+    .expandable--column {
+        display: block;
+        margin-right: 20px;
+    }
+    .star--container {
+        display: none;
+    }
+    .navbar--expandable--conatiner {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding-top: 99px;
+        justify-content: center;
+    }
+    .navbar--links {
+        margin-bottom: 46px;
+    }
+    .navbar--links--container {
+        display: none;
+    }
+    .hero--image--section {
+        margin-top: 70px;
+    }
+    .hero--image--heading--conatiner {
+        padding-left: 170px;
+        margin-top: 190px;
+    }
+    .hollow--design {
+        margin-left: 10px;
+    }
+    .image--heading {
+        font-size: 55px;
+    }
+    .hero--image--container {
+        margin-left: -1284px;
+    }
+}
