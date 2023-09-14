@@ -6,6 +6,7 @@ import axios from "axios";
 import LoadingCategoies, { LoadingProducts } from "./Other";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import LinkIcon from "../assets/icons/LinkIcon";
+import BlackStar from "../assets/icons/BlackStar";
 
 interface CategoryI {
   loadingCategory: boolean;
@@ -28,6 +29,7 @@ interface ProductDataI {
 }
 
 const Products = () => {
+  // states for managing data like categories and loading categories
   const [categories, setCategories] = useState<CategoryI>({
     categoryData: [],
     loadingCategory: true,
@@ -45,6 +47,7 @@ const Products = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCards] = useState(3);
 
+  // Method for scrolling the products to the right
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex + visibleCards < jewelleryData.length
@@ -53,6 +56,7 @@ const Products = () => {
     );
   };
 
+  // Method for scrolling the data to the right
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
   };
@@ -64,8 +68,10 @@ const Products = () => {
     menClothingData,
     womensClothingData,
   } = products;
+
   useEffect(() => {
     axios
+      // calling api for getting products categories
       .get("https://fakestoreapi.com/products/categories")
       .then((resp) => {
         setCategories({
@@ -73,6 +79,7 @@ const Products = () => {
           loadingCategory: false,
         });
         axios
+          // after getting categories calling product api to get the products
           .get("https://fakestoreapi.com/products")
           .then((resp) => {
             let tempMenClothingData: ProductObjI[] = [];
@@ -111,6 +118,7 @@ const Products = () => {
       });
   }, []);
 
+  // Method for conditionally showing the products of the selected category
   const getActiveProducts = (activeCategory: string | null) => {
     let dataArray: ProductObjI[] = [];
     if (activeCategory === "men's clothing") dataArray = menClothingData;
@@ -157,6 +165,11 @@ const Products = () => {
       <div className="products--heading--container">
         <div className="products--left--container">
           <h2 className="product--heading">New products</h2>
+          <div className="designer--underline">
+            <div style={{ position: "relative", top: "-9.5px", left: "0px" }}>
+              <BlackStar />
+            </div>
+          </div>
         </div>
         <div className="products--right--container">
           <button className="product--btn" onClick={() => handlePrev()}>

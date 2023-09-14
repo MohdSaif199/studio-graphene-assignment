@@ -124,6 +124,13 @@
     cursor: pointer;
 }
 
+.designer--underline {
+    height: 2px;
+    background: #000;
+    position: relative;
+    top: -76px;
+}
+
 @media screen and (max-width: 600px) {
     .products--heading--container {
         display: block;
@@ -149,11 +156,8 @@
     .categories--container {
         margin-left: 23px;
         display: flex;
-        gap: 14px;
+        gap: 13px;
         align-items: normal;
-    }
-    .category {
-        margin-right: 12px;
     }
     .product--main--container {
         margin-left: 20px;
@@ -167,5 +171,8 @@
     }
     .link--icon--container {
         left: 200px;
+    }
+    .designer--underline {
+        top: -35px;
     }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 
+// Component for loading categories
 const LoadingCategoies = () => {
   return (
     <>
@@ -7,10 +8,10 @@ const LoadingCategoies = () => {
         <div
           key={item}
           style={{
-            width: "100px",
+            width: "150px",
             height: "30px",
             background: "lightgrey",
-            marginBottom: "20px",
+            marginBottom: "40px",
           }}
         ></div>
       ))}
@@ -18,15 +19,16 @@ const LoadingCategoies = () => {
   );
 };
 
+// Method for loading products
 export const LoadingProducts = () => {
   return (
     <div style={{ display: "flex", gap: "48px" }}>
-      {[0, 1, 2, 3].map((item: number) => (
+      {[0, 1, 2].map((item: number) => (
         <div
           key={item}
           style={{
             width: "320px",
-            height: "320px",
+            height: "500px",
             background: "lightgrey",
           }}
         ></div>

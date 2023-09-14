@@ -9,7 +9,9 @@ import Star from "../assets/icons/Star";
 import ExpandMenu from "../assets/icons/ExpandMenu";
 import Cross from "../assets/icons/Cross";
 import heroImg from "../assets/imgs/heroImg.png";
+import LinkArrow from "../assets/icons/LinkArrow";
 
+// array for making navbars links
 const navLinks = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
@@ -128,14 +130,23 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hero--image--section">
-          <div className="hero--image--heading--conatiner">
+          <div className="hero--image--heading--container">
             <h1 className="image--heading">Fresh</h1>
             <h1 className="image--heading hollow--design">2022</h1>
             <h1 className="image--heading">Look</h1>
           </div>
           <div className="hero--image--container">
-            <img src={heroImg} alt="heroimg.png" />
+            <img src={heroImg} className="hero--image" alt="heroimg.png" />
           </div>
+        </div>
+        <div className="see--more--container">
+          <a
+            href="#"
+            className="link"
+            style={{ fontSize: "18px", color: "#FFF", cursor: "pointer" }}
+          >
+            See more <LinkArrow />
+          </a>
         </div>
       </div>
     </>
