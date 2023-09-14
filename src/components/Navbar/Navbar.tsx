@@ -143,7 +143,7 @@ const Navbar = () => {
           <a
             href="#"
             className="link"
-            style={{ fontSize: "18px", color: "#FFF", cursor: "pointer" }}
+            style={{ fontSize: "18px", color: "#FFF", cursor: "pointer",margin:"auto" }}
           >
             See more <LinkArrow />
           </a>

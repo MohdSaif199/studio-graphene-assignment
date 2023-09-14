@@ -100,7 +100,7 @@
     padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1500px) {
     .form--main--container {
         height: auto;
     }
@@ -132,5 +132,20 @@
     .form--button {
         height: 110px;
         width: 110px;
+    }
+}
+
+@media screen and (max-width:465px) {
+    .form--big--heading {
+        font-size: 8vw;
+        margin-top: 90px;
+    }
+    .button--container {
+        left: 20px;
+    }
+    .form--button {
+        height: 30vw;
+        width: 30vw;
+        font-size: 4vw;
     }
 }
