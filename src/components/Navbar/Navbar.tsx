@@ -75,7 +75,7 @@ const Navbar = () => {
       <div className="main--container">
         <div className="heading--container">
           <div className="heading--container--left">
-            <h2>Shopkart</h2>
+            <h2>ShopKart</h2>
           </div>
           <div className="heading--container--right">
             <h4>WISHLIST (0) </h4>
