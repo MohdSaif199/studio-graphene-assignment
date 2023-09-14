@@ -289,6 +289,13 @@
     }
 }
 
+@media screen and (max-width:413px) {
+    .hero--image {
+        width: 158vw;
+        height: auto
+    }
+}
+
 @media screen and (max-width:290px) {
     .hero--image {
         width: 209vw;
